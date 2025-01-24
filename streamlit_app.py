@@ -15,7 +15,7 @@ def main():
     get_and_process_prompt()
 
 def get_replicate_api_token():
-    os.environ['REPLICATE_API_TOKEN'] = st.secrets['REPLICATE_API_TOKEN']
+    os.environ['REPLICATE_API_TOKEN'] = st.secrets.llm.replicate_api_token
 
 def display_sidebar_ui():
     with st.sidebar:
